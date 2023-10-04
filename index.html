@@ -9,50 +9,80 @@
   </head>
   <body>
     <div class="wrapper">
+      <header class="header">
         <div class="__container">
-            <header class="header">
+          <div class="header_row">
+            <div class="header_logo">
+              <a href="index.html">
+                <img
+                  class="img"
+                  src="images/header/logo/logo3.png"
+                  alt="logo"
+                />
+              </a>
+            </div>
 
-                    <div class="header_logo">
-                        <a href="index.html">
-                            <img class="img" src="images/header/logo/logo3.png" alt="logo">
-                        </a>
+            <nav class="menu">
+              <ul class="menu__list">
+                <li><a href="index.html">Главная</a></li>
+                <li class="menu_catalog"><a href="catalog.html">Каталог <img src="/images/header/icons//str.png" alt="Cursor"></a></li>
+                <li><a href="index.html">Контакты</a></li>
+                <li><a href="index.html">О компании</a></li>
+              </ul>
+
+              <div class="hamburger-menu">
+                <ul class="menu__box">
+                  <li><a class="menu__item" href="#">Главная</a></li>
+                        <li><a class="menu__item menu_catalog" href="catalog.html">Каталог <img src="/images/header/icons//str.png" alt="Cursor"></a></li>
+                        <li><a class="menu__item" href="#">Контакты</a></li>
+                        <li><a class="menu__item" href="#">О компании</a></li>
+                </ul>
+              </div>
+            </nav>
+
+            <div class="block_cart-search">
+              <div class="block_search">
+                <form class="form_search">
+                  <input type="text" placeholder="Поиск" />
+                  <button type="submit">
+                    <img
+                      class="img"
+                      src="images/header/icons/lypa.png"
+                      alt=""
+                    />
+                  </button>
+                </form>
+              </div>
+
+              <div class="block_cart">
+                <p>0</p>
+                <a href="index.html">
+                    <div class="img_cart">
+                        <img
+                        class="img"
+                        src="images/header/icons/image 3.png"
+                        alt=""
+                      />
                     </div>
-        
-                    <nav class="menu">
-                        <ul class="menu__list">
-                            <li><a href="index.html">Главная</a></li>
-                            <li class="menu_catalog"><a href="index.html">Каталог</a></li>
-                            <li><a href="index.html">Контакты</a></li>
-                            <li><a href="index.html">О компании</a></li>
-                        </ul>
-                    </nav>
-    
-                    <div>
-                        <div class="block_search">
-                            <form class="form_search">
-                                <input type="text" placeholder="Поиск">
-                                <button type="submit"><img class="img" src="images/header/icons/lypa.png" alt=""></button>
-                              </form>
-                        </div>
-                        <div class="block_cart">
-                            <p>0</p>
-                            <a href="index.html">
-                                <div class="">
-                                    <img class="img" src="images/header/icons/image 3.png" alt="">
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-            </header>
+                </a>
+              </div>
+
+              <div>
+                <input id="menu__toggle" type="checkbox" />
+                <label class="menu__btn" for="menu__toggle">
+                  <span></span>
+                </label>
+              </div>
+            </div>
+          </div>
         </div>
+      </header>
 
-        <main>
-            
-        </main>
+      <main></main>
 
-        <footer>
-                <p style="color: aliceblue;">awd</p>
-        </footer>
+      <footer>
+        <p style="color: aliceblue">awd</p>
+      </footer>
     </div>
   </body>
 </html>
