@@ -102,21 +102,62 @@
                         <h2>Фильтры</h2>
                     </div>
                     <div class="parameters">
-                        <div class="parameter_block">
-                            <p class="param-text">Цена</p>
-                            <img class="parameter_img" src="images/header/icons//str.png" alt="Cursor">
+                        <div>
+                            <div class="parameter_block">
+                                <p class="param-text">Цена</p>
+                                <img class="parameter_img" src="images/header/icons//str.png" alt="Cursor">
+                            </div>
+                            
                         </div>
+                        
                         <div class="parameter_block">
                             <p class="param-text">Мощность</p>
                             <img class="parameter_img" src="images/header/icons//str.png" alt="Cursor">
                         </div>
-                        <div class="parameter_block">
-                            <p class="param-text">Тип затяжки</p>
-                            <img class="parameter_img" src="images/header/icons//str.png" alt="Cursor">
+                        <div>
+                            <div id="type" class="parameter_block">
+                                <p class="param-text">Тип затяжки</p>
+                                <img class="parameter_img" src="images/header/icons//str.png" alt="Cursor">
+                            </div>
+                            <ul id="more_params" class="none">
+                                <li class="param">
+                                    <input type="checkbox" class="custom-checkbox" id="sig" name="sig" value="yes">
+                                    <label for="sig">Сигаретная</label>
+                                </li>
+                                <li class="param">
+                                    <input type="checkbox" class="custom-checkbox" id="reg" name="reg" value="yes">
+                                    <label for="reg">Регулируемая</label>
+                                </li>
+                                <li class="param">
+                                    <input type="checkbox" class="custom-checkbox" id="smesh" name="happy" value="yes">
+                                    <label for="smesh">Смешанная</label>
+                                </li>
+                                <li class="param">
+                                    <input type="checkbox" class="custom-checkbox" id="у" name="у" value="yes">
+                                    <label for="у">Кальянная</label>
+                                </li>
+                            </ul>
                         </div>
-                        <div class="parameter_block">
-                            <p class="param-text">Наличие на складах</p>
-                            <img class="parameter_img" src="images/header/icons//str.png" alt="Cursor">
+                        
+                        <div>
+                            <div class="parameter_block">
+                                <p class="param-text">Наличие на складах</p>
+                                <img class="parameter_img" src="images/header/icons//str.png" alt="Cursor">
+                            </div>
+                            <ul class="more_params">
+                                <li class="param">
+                                    <input type="checkbox" class="custom-checkbox" id="happy" name="happy" value="yes">
+                                    <label for="happy">Абакан, Кирова 77А</label>
+                                </li>
+                                <li class="param">
+                                    <input type="checkbox" class="custom-checkbox" id="happy" name="happy" value="yes">
+                                    <label for="happy">Абакан, Пушкина 120</label>
+                                </li>
+                                <li class="param">
+                                    <input type="checkbox" class="custom-checkbox" id="happy" name="happy" value="yes">
+                                    <label for="happy">Черногорск, Ленина 99Б</label>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                     <div class="clean_block">
@@ -276,5 +317,8 @@
         </div>
       </footer>
     </div>
+
+    <script src="scripts/category.js"></script>
+
   </body>
 </html>
