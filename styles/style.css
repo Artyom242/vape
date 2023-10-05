@@ -471,3 +471,36 @@ ul.pagination li a.active {
 ul.pagination li a:hover:not(.active) {border-color: #ffffff;}
 
 div.center {text-align: center;}
+
+/* Footer */
+
+footer {
+    position: relative;
+    width: 100%;
+    background: #050505;
+}
+
+.footer_block {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4% 0;
+}
+
+.number_footer {
+    font-size: calc(16px + 8 * (100vw / 1500));
+}
+
+.img_footer {
+    width: 96px;
+}
+
+.contacts {
+    display: flex;
+    gap: 20px;
+}
+
+.img_footer_contactn {
+    width: 30px;
+}
