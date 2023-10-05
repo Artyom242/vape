@@ -25,15 +25,27 @@
             <nav class="menu">
               <ul class="menu__list">
                 <li><a href="index.html">Главная</a></li>
-                <li class="menu_catalog"><a href="catalog.html">Каталог <img src="/images/header/icons//str.png" alt="Cursor"></a></li>
+                <li class="arrow_img"><a href="catalog.html">Каталог <img src="images/header/icons//str.png" alt="Cursor"></a></li>
                 <li><a href="index.html">Контакты</a></li>
                 <li><a href="index.html">О компании</a></li>
               </ul>
 
-              <div class="hamburger-menu">
+              <div class="hamburger-menu menu__box">
+                <div class="block_search">
+                    <form class="form_search">
+                      <input type="text" placeholder="Поиск" />
+                      <button type="submit">
+                        <img
+                          class="img"
+                          src="images/header/icons/lypa.png"
+                          alt=""
+                        />
+                      </button>
+                    </form>
+                  </div>
                 <ul class="menu__box">
                   <li><a class="menu__item" href="#">Главная</a></li>
-                        <li><a class="menu__item menu_catalog" href="catalog.html">Каталог <img src="/images/header/icons//str.png" alt="Cursor"></a></li>
+                        <li><a class="menu__item arrow_img" href="catalog.html">Каталог <img src="/images/header/icons//str.png" alt="Cursor"></a></li>
                         <li><a class="menu__item" href="#">Контакты</a></li>
                         <li><a class="menu__item" href="#">О компании</a></li>
                 </ul>
@@ -78,11 +90,235 @@
         </div>
       </header>
 
-      <main></main>
+      <main>
+        <div class="__container">
+            <div class="block_title">
+                <h1 class="title">POD-системы</h1>
+            </div>
+
+            <div class="block_main">
+                <div class="side_blocks">
+                    <div class="side_title">
+                        <h2>Фильтры</h2>
+                    </div>
+                    <div class="parameters">
+                        <div>
+                            <div class="parameter_block">
+                                <p class="param-text">Цена</p>
+                                <img class="parameter_img" src="images/header/icons//str.png" alt="Cursor">
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="parameter_block">
+                            <p class="param-text">Мощность</p>
+                            <img class="parameter_img" src="images/header/icons//str.png" alt="Cursor">
+                        </div>
+                        <div>
+                            <div id="type" class="parameter_block">
+                                <p class="param-text">Тип затяжки</p>
+                                <img class="parameter_img" src="images/header/icons//str.png" alt="Cursor">
+                            </div>
+                            <ul id="more_params" class="none">
+                                <li class="param">
+                                    <input type="checkbox" class="custom-checkbox" id="sig" name="sig" value="yes">
+                                    <label for="sig">Сигаретная</label>
+                                </li>
+                                <li class="param">
+                                    <input type="checkbox" class="custom-checkbox" id="reg" name="reg" value="yes">
+                                    <label for="reg">Регулируемая</label>
+                                </li>
+                                <li class="param">
+                                    <input type="checkbox" class="custom-checkbox" id="smesh" name="happy" value="yes">
+                                    <label for="smesh">Смешанная</label>
+                                </li>
+                                <li class="param">
+                                    <input type="checkbox" class="custom-checkbox" id="у" name="у" value="yes">
+                                    <label for="у">Кальянная</label>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div>
+                            <div class="parameter_block">
+                                <p class="param-text">Наличие на складах</p>
+                                <img class="parameter_img" src="images/header/icons//str.png" alt="Cursor">
+                            </div>
+                            <ul class="more_params">
+                                <li class="param">
+                                    <input type="checkbox" class="custom-checkbox" id="happy" name="happy" value="yes">
+                                    <label for="happy">Абакан, Кирова 77А</label>
+                                </li>
+                                <li class="param">
+                                    <input type="checkbox" class="custom-checkbox" id="happy" name="happy" value="yes">
+                                    <label for="happy">Абакан, Пушкина 120</label>
+                                </li>
+                                <li class="param">
+                                    <input type="checkbox" class="custom-checkbox" id="happy" name="happy" value="yes">
+                                    <label for="happy">Черногорск, Ленина 99Б</label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="clean_block">
+                        <a class="clean_text" href="">Очистить фильтр</a>
+                    </div>
+                </div>
+
+                <div class="container_cards">
+                    <div class="title_card">
+                        <div class="card_title">
+                            <h2>Поды</h2>
+                        </div>
+                        <div class="sort_card">
+                            <p>Сортировать:</p>
+                            <select class="sorts" name="sort" id="">
+                                <option value="defoult">По умолчанию</option>
+                                <option value="defoult">По популярности</option>
+                                <option value="defoult">По возрастанию цефцвфцвфцвфцны</option>
+                                <option value="defoult">По скидке</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="cards_block">
+                        <div class="card">
+                            <div class="img_card">
+                                <a href=""><img class="img" src="images/main/cards/White-Raga-Aio.webp" alt=""></a>
+                            </div>
+                            <div class="text-card">
+                                <a href="">Одноразовый GOODOK 4200 Blue Razz Lemonade</a>
+                            </div>
+                            <p class="prise-card">1 500₽</p>
+                            <a class="buttot_card" href="">
+                                <div class="cart_card">
+                                    <p>В корзину</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card">
+                            <div class="img_card">
+                                <a href=""><img class="img" src="images/main/cards/White-Raga-Aio.webp" alt=""></a>
+                            </div>
+                            <div class="text-card">
+                                <a href="">Одноразовый GOODOK 4200 Blue Razz Lemonade</a>
+                            </div>
+                            <p class="prise-card">1 500₽</p>
+                            <a class="buttot_card" href="">
+                                <div class="cart_card">
+                                    <p>В корзину</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card">
+                            <div class="img_card">
+                                <a href=""><img class="img" src="images/main/cards/White-Raga-Aio.webp" alt=""></a>
+                            </div>
+                            <div class="text-card">
+                                <a href="">Одноразовый GOODOK 4200 Blue Razz Lemonade</a>
+                            </div>
+                            <p class="prise-card">1 500₽</p>
+                            <a class="buttot_card" href="">
+                                <div class="cart_card">
+                                    <p>В корзину</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card">
+                            <div class="img_card">
+                                <a href=""><img class="img" src="images/main/cards/White-Raga-Aio.webp" alt=""></a>
+                            </div>
+                            <div class="text-card">
+                                <a href="">Одноразовый GOODOK 4200 Blue Razz Lemonade</a>
+                            </div>
+                            <p class="prise-card">1 500₽</p>
+                            <a class="buttot_card" href="">
+                                <div class="cart_card">
+                                    <p>В корзину</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card">
+                            <div class="img_card">
+                                <a href=""><img class="img" src="images/main/cards/White-Raga-Aio.webp" alt=""></a>
+                            </div>
+                            <div class="text-card">
+                                <a href="">Одноразовый GOODOK 4200 Blue Razz Lemonade</a>
+                            </div>
+                            <p class="prise-card">1 500₽</p>
+                            <a class="buttot_card" href="">
+                                <div class="cart_card">
+                                    <p>В корзину</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card">
+                            <div class="img_card">
+                                <a href=""><img class="img" src="images/main/cards/White-Raga-Aio.webp" alt=""></a>
+                            </div>
+                            <div class="text-card">
+                                <a href="">Одноразовый GOODOK 4200 Blue Razz Lemonade</a>
+                            </div>
+                            <p class="prise-card">1 500₽</p>
+                            <a class="buttot_card" href="">
+                                <div class="cart_card">
+                                    <p>В корзину</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="paginate_block">
+                        <div class="center">
+                            <ul class="pagination">
+                              <li><a class="none-border" href="#">«</a></li>
+                              <li><a href="#">1</a></li>
+                              <li><a class="active" href="#">2</a></li>
+                              <li><a href="#">3</a></li>
+                              <li><p>...</p></li>
+                              <li><a href="#">199</a></li>
+                              <li><a class="none-border" href="#">»</a></li>
+                            </ul>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </main>
 
       <footer>
-        <p style="color: aliceblue">awd</p>
+        <div class="__container">
+            <div class="footer_block">
+                <div class="number_footer">
+                    <a href="tel:+79991112233">8-999-999-99-99</a>
+                </div>
+                <div class="img_footer">
+                    <a href="">
+                        <img class="img" src="images/header/logo/logo3.png" alt="">
+                    </a>
+                </div>
+                    <div class="contacts">
+                        <div class="img_footer_contactn"> 
+                            <a href="">
+                                <img class="img" src="images/footer/free-icon-instagram-2111463.png" alt="">
+                            </a>
+                        </div>
+                        <div class="img_footer_contactn"> 
+                            <a href="">
+                                <img class="img" src="images/footer/free-icon-telegram-2111646.png" alt="">
+                            </a>
+                        </div>
+                        <div class="img_footer_contactn"> 
+                            <a href="">
+                                <img class="img" src="images/footer/free-icon-vk-5968835.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
       </footer>
     </div>
+
+    <script src="scripts/category.js"></script>
+
   </body>
 </html>
