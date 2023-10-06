@@ -23,46 +23,52 @@
             </div>
 
             <nav class="menu">
-              <ul class="menu__list">
-                <li><a href="index.html">Главная</a></li>
-                <li class="arrow_img"><a href="catalog.html">Каталог <img src="images/header/icons//str.png" alt="Cursor"></a></li>
-                <li><a href="index.html">Контакты</a></li>
-                <li><a href="index.html">О компании</a></li>
-              </ul>
-
-              <div class="hamburger-menu menu__box">
-                <div class="block_search">
-                    <form class="form_search">
-                      <input type="text" placeholder="Поиск" />
-                      <button type="submit">
-                        <img
-                          class="img"
-                          src="images/header/icons/lypa.png"
-                          alt=""
-                        />
-                      </button>
-                    </form>
-                  </div>
-                <ul class="menu__box">
-                  <li><a class="menu__item" href="#">Главная</a></li>
-                        <li><a class="menu__item arrow_img" href="catalog.html">Каталог <img src="/images/header/icons//str.png" alt="Cursor"></a></li>
-                        <li><a class="menu__item" href="#">Контакты</a></li>
-                        <li><a class="menu__item" href="#">О компании</a></li>
+                <ul class="menu__list topmenu">
+                  <li class="line" ><a href="index.html">Главная</a></li>
+                  <li><a href="catalog.html" class="arrow_img">Каталог <img src="images/header/icons//str.png" alt="Cursor"></a>
+                      <ul class="submenu">
+                        <li><a href="">Поды</a></li>
+                        <li><a class="arrow_img" href="">Жижи <img src="images/header/icons//str.png" width="10px" alt="Cursor"></a>
+                          <ul class="submenu">
+                            <li><a href="">меню третьего уровня</a></li>
+                            <li><a href="">меню третьего уровня</a></li>
+                            <li><a href="">меню третьего уровня</a></li>
+                          </ul>
+                        </li>
+                        <li><a href="">Одноразки</a></li>
+                      </ul>
+                    </li>
+                  <li class="line"><a href="index.html">Контакты</a></li>
+                  <li class="line"><a href="index.html">О компании</a></li>
                 </ul>
-              </div>
-            </nav>
+  
+                <div class="hamburger-menu menu__box">
+                  <div class="block_search">
+                      <form class="form_search">
+                        <input type="text" placeholder="Поиск" />
+                        <button type="submit">
+                          <img
+                            class="img"
+                            src="images/header/icons/lypa.png"
+                            alt=""
+                          />
+                        </button>
+                      </form>
+                    </div>
+                  <ul class="menu__box">
+                      <li><a class="menu__item" href="#">Главная</a></li>
+                      <li><a class="menu__item arrow_img" href="catalog.html">Каталог <img src="/images/header/icons//str.png" alt="Cursor"></a></li>
+                      <li><a class="menu__item" href="#">Контакты</a></li>
+                      <li><a class="menu__item" href="#">О компании</a></li>
+                  </ul>
+                </div>
+              </nav>
 
             <div class="block_cart-search">
               <div class="block_search">
                 <form class="form_search">
-                  <input type="text" placeholder="Поиск" />
-                  <button type="submit">
-                    <img
-                      class="img"
-                      src="images/header/icons/lypa.png"
-                      alt=""
-                    />
-                  </button>
+                    <input type="search" id="site-search" name="q" placeholder="Поиск">
+                    <button class="submit_search"><img class="img" src="images/header/icons/lypa.png" alt=""/></button>
                 </form>
               </div>
 
@@ -167,11 +173,11 @@
 
                 <div class="container_cards">
                     <div class="title_card">
-                        <div class="card_title">
-                            <h2>Поды</h2>
-                        </div>
+                        <button class="filter_card">
+                            <p>Фильтры</p>
+                        </button>
                         <div class="sort_card">
-                            <p>Сортировать:</p>
+                            <p class="sort_text">Сортировать:</p>
                             <select class="sorts" name="sort" id="">
                                 <option value="defoult">По умолчанию</option>
                                 <option value="defoult">По популярности</option>

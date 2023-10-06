@@ -9,79 +9,129 @@
   </head>
   <body>
     <div class="wrapper">
-      <header class="header">
-        <div class="__container">
-          <div class="header_row">
-            <div class="header_logo">
-              <a href="index.html">
-                <img
-                  class="img"
-                  src="images/header/logo/logo3.png"
-                  alt="logo"
-                />
-              </a>
-            </div>
-
-            <nav class="menu">
-              <ul class="menu__list">
-                <li><a href="index.html">Главная</a></li>
-                <li class="menu_catalog"><a href="catalog.html">Каталог <img src="images/header/icons//str.png" alt="Cursor"></a></li>
-                <li><a href="index.html">Контакты</a></li>
-                <li><a href="index.html">О компании</a></li>
-              </ul>
-
-              <div class="hamburger-menu">
-                <ul class="menu__box">
-                  <li><a class="menu__item" href="#">Главная</a></li>
-                        <li><a class="menu__item menu_catalog" href="catalog.html">Каталог <img src="/images/header/icons//str.png" alt="Cursor"></a></li>
-                        <li><a class="menu__item" href="#">Контакты</a></li>
-                        <li><a class="menu__item" href="#">О компании</a></li>
-                </ul>
-              </div>
-            </nav>
-
-            <div class="block_cart-search">
-              <div class="block_search">
-                <form class="form_search">
-                  <input type="text" placeholder="Поиск" />
-                  <button type="submit">
+        <header class="header">
+            <div class="__container">
+              <div class="header_row">
+                <div class="header_logo">
+                  <a href="index.html">
                     <img
                       class="img"
-                      src="images/header/icons/lypa.png"
-                      alt=""
+                      src="images/header/logo/logo3.png"
+                      alt="logo"
                     />
-                  </button>
-                </form>
-              </div>
-
-              <div class="block_cart">
-                <p>0</p>
-                <a href="index.html">
-                    <div class="img_cart">
-                        <img
-                        class="img"
-                        src="images/header/icons/image 3.png"
-                        alt=""
-                      />
+                  </a>
+                </div>
+    
+                <nav class="menu">
+                    <ul class="menu__list topmenu">
+                      <li class="line" ><a href="index.html">Главная</a></li>
+                      <li><a href="catalog.html" class="arrow_img">Каталог <img src="images/header/icons//str.png" alt="Cursor"></a>
+                          <ul class="submenu">
+                            <li><a href="">Поды</a></li>
+                            <li><a class="arrow_img" href="">Жижи <img src="images/header/icons//str.png" width="10px" alt="Cursor"></a>
+                              <ul class="submenu">
+                                <li><a href="">меню третьего уровня</a></li>
+                                <li><a href="">меню третьего уровня</a></li>
+                                <li><a href="">меню третьего уровня</a></li>
+                              </ul>
+                            </li>
+                            <li><a href="">Одноразки</a></li>
+                          </ul>
+                        </li>
+                      <li class="line"><a href="index.html">Контакты</a></li>
+                      <li class="line"><a href="index.html">О компании</a></li>
+                    </ul>
+      
+                    <div class="hamburger-menu menu__box">
+                      <div class="block_search">
+                          <form class="form_search">
+                            <input type="text" placeholder="Поиск" />
+                            <button type="submit">
+                              <img
+                                class="img"
+                                src="images/header/icons/lypa.png"
+                                alt=""
+                              />
+                            </button>
+                          </form>
+                        </div>
+                      <ul class="menu__box">
+                          <li><a class="menu__item" href="#">Главная</a></li>
+                          <li><a class="menu__item arrow_img" href="catalog.html">Каталог <img src="/images/header/icons//str.png" alt="Cursor"></a></li>
+                          <li><a class="menu__item" href="#">Контакты</a></li>
+                          <li><a class="menu__item" href="#">О компании</a></li>
+                      </ul>
                     </div>
-                </a>
-              </div>
-
-              <div>
-                <input id="menu__toggle" type="checkbox" />
-                <label class="menu__btn" for="menu__toggle">
-                  <span></span>
-                </label>
+                  </nav>
+    
+                <div class="block_cart-search">
+                  <div class="block_search">
+                    <form class="form_search">
+                        <input type="search" id="site-search" name="q" placeholder="Поиск">
+                        <button class="submit_search"><img class="img" src="images/header/icons/lypa.png" alt=""/></button>
+                    </form>
+                  </div>
+    
+                  <div class="block_cart">
+                    <p>0</p>
+                    <a href="index.html">
+                        <div class="img_cart">
+                            <img
+                            class="img"
+                            src="images/header/icons/image 3.png"
+                            alt=""
+                          />
+                        </div>
+                    </a>
+                  </div>
+    
+                  <div>
+                    <input id="menu__toggle" type="checkbox" />
+                    <label class="menu__btn" for="menu__toggle">
+                      <span></span>
+                    </label>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
-      </header>
+          </header>
 
-      <main></main>
+      <main>
+        <a href="catalog.html">Категория</a>
+
+      </main>
 
       <footer>
-        <p style="color: aliceblue">awd</p>
+        <div class="__container">
+            <div class="footer_block">
+                <div class="number_footer">
+                    <a href="tel:+79991112233">8-999-999-99-99</a>
+                </div>
+                <div class="img_footer">
+                    <a href="">
+                        <img class="img" src="images/header/logo/logo3.png" alt="">
+                    </a>
+                </div>
+                    <div class="contacts">
+                        <div class="img_footer_contactn"> 
+                            <a href="">
+                                <img class="img" src="images/footer/free-icon-instagram-2111463.png" alt="">
+                            </a>
+                        </div>
+                        <div class="img_footer_contactn"> 
+                            <a href="">
+                                <img class="img" src="images/footer/free-icon-telegram-2111646.png" alt="">
+                            </a>
+                        </div>
+                        <div class="img_footer_contactn"> 
+                            <a href="">
+                                <img class="img" src="images/footer/free-icon-vk-5968835.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
       </footer>
     </div>
   </body>
