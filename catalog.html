@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/null.css">
+    <link rel="stylesheet" href="styles/base.css">
     <title>Vape House</title>
   </head>
   <body>
@@ -12,6 +13,7 @@
       <header class="header">
         <div class="__container">
           <div class="header_row">
+    
             <div class="header_logo">
               <a href="index.html">
                 <img
@@ -22,8 +24,8 @@
               </a>
             </div>
 
-            <nav class="menu">
-                <ul class="menu__list topmenu">
+            <nav class="menu_block">
+                <ul class="menu__list">
                   <li class="line" ><a href="index.html">Главная</a></li>
                   <li><a href="catalog.html" class="arrow_img">Каталог <img src="images/header/icons//str.png" alt="Cursor"></a>
                       <ul class="submenu">
@@ -41,28 +43,31 @@
                   <li class="line"><a href="index.html">Контакты</a></li>
                   <li class="line"><a href="index.html">О компании</a></li>
                 </ul>
-  
-                <div class="hamburger-menu menu__box">
-                  <div class="block_search">
-                      <form class="form_search">
-                        <input type="text" placeholder="Поиск" />
-                        <button type="submit">
-                          <img
-                            class="img"
-                            src="images/header/icons/lypa.png"
-                            alt=""
-                          />
-                        </button>
-                      </form>
-                    </div>
-                  <ul class="menu__box">
-                      <li><a class="menu__item" href="#">Главная</a></li>
-                      <li><a class="menu__item arrow_img" href="catalog.html">Каталог <img src="/images/header/icons//str.png" alt="Cursor"></a></li>
-                      <li><a class="menu__item" href="#">Контакты</a></li>
-                      <li><a class="menu__item" href="#">О компании</a></li>
-                  </ul>
+
+                    <!-- Скрытое меню -->
+                <div class="menu">
+                        <div>
+                            <ul>
+                                <li><a href='#'>Главная</a></li>
+                                <li><a  class="arrow_img" href='#'>Каталог <img src="images/header/icons//str.png" width="13px" height="10px" alt="Cursor"></a>
+                                    <ul class="menu">
+                                        <li><a href="">Поды</a></li>
+                                        <li><a class="arrow_img" href="">Жижи <img src="images/header/icons//str.png" width="13px" alt="Cursor"></a>
+                                          <ul class="menu">
+                                            <li><a href="">меню третьего уровня</a></li>
+                                            <li><a href="">меню третьего уровня</a></li>
+                                            <li><a href="">меню третьего уровня</a></li>
+                                          </ul>
+                                        </li>
+                                        <li><a href="">Одноразки</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href='#'>Контакты</a></li>
+                                <li><a href='#'>О компании</a></li>
+                            </ul>
+                        </div>
                 </div>
-              </nav>
+            </nav>
 
             <div class="block_cart-search">
               <div class="block_search">
@@ -85,13 +90,14 @@
                 </a>
               </div>
 
-              <div>
-                <input id="menu__toggle" type="checkbox" />
-                <label class="menu__btn" for="menu__toggle">
-                  <span></span>
-                </label>
+              <div class="menu_btn ">
+                <input id="burger" type="checkbox" class="toggler" >
+                <div class="hamburger"><div></div></div>
               </div>
             </div>
+          </div>
+          <div>
+            
           </div>
         </div>
       </header>
@@ -108,67 +114,111 @@
                         <h2>Фильтры</h2>
                     </div>
                     <div class="parameters">
-                        <div>
-                            <div class="parameter_block">
-                                <p class="param-text">Цена</p>
+                        <div class="accordion__item">
+                            <div class="parameter_block accordion__header">
+                                <button class="param-text">Цена</button>
                                 <img class="parameter_img" src="images/header/icons//str.png" alt="Cursor">
+                            </div>
+                            <div class="accordion__body">
+                                <div class="price-content ">
+                                    <div class="num_blocks">
+                                        <div class="price_block">
+                                              <p id="min-value">200</p>
+                                          </div>
+                                          <span>—</span>
+                                          <div class="price_block">
+                                            <p id="max-value">5000</p>
+                                          </div>
+                                    </div>
+                                    <div class="range-slider">
+                                      <input type="range" class="min-price" value="200" min="100" max="7000" step="10">
+                                      <input type="range" class="max-price" value="5000" min="100" max="7000" step="10">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion__item">
+                            <div class="parameter_block accordion__header">
+                                <button class="param-text ">Мощность</button>
+                                <img class="parameter_img" src="images/header/icons//str.png" alt="Cursor">
+                            </div>
+                            <div class="accordion__body">
+                                <ul class="more_params">
+                                    <li class="param">
+                                        <input type="checkbox" class="custom-checkbox" id="sig" name="sig" value="yes">
+                                        <label for="sig">Сигаретная</label>
+                                    </li>
+                                    <li class="param">
+                                        <input type="checkbox" class="custom-checkbox" id="reg" name="reg" value="yes">
+                                        <label for="reg">Регулируемая</label>
+                                    </li>
+                                    <li class="param">
+                                        <input type="checkbox" class="custom-checkbox" id="smesh" name="happy" value="yes">
+                                        <label for="smesh">Смешанная</label>
+                                    </li>
+                                    <li class="param">
+                                        <input type="checkbox" class="custom-checkbox" id="у" name="у" value="yes">
+                                        <label for="у">Кальянная</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion__item">
+                            <div class="parameter_block accordion__header">
+                                <button class="param-text">Тип затяжки</button>
+                                <img class="parameter_img" src="images/header/icons//str.png" alt="Cursor">
+                            </div>
+                            <div class="accordion__body">
+                                <ul class="more_params">
+                                    <li class="param">
+                                        <input type="checkbox" class="custom-checkbox" id="sig" name="sig" value="yes">
+                                        <label for="sig">Сигаретная</label>
+                                    </li>
+                                    <li class="param">
+                                        <input type="checkbox" class="custom-checkbox" id="reg" name="reg" value="yes">
+                                        <label for="reg">Регулируемая</label>
+                                    </li>
+                                    <li class="param">
+                                        <input type="checkbox" class="custom-checkbox" id="smesh" name="happy" value="yes">
+                                        <label for="smesh">Смешанная</label>
+                                    </li>
+                                    <li class="param">
+                                        <input type="checkbox" class="custom-checkbox" id="у" name="у" value="yes">
+                                        <label for="у">Кальянная</label>
+                                    </li>
+                                </ul>
                             </div>
                             
                         </div>
                         
-                        <div class="parameter_block">
-                            <p class="param-text">Мощность</p>
-                            <img class="parameter_img" src="images/header/icons//str.png" alt="Cursor">
-                        </div>
-                        <div>
-                            <div id="type" class="parameter_block">
-                                <p class="param-text">Тип затяжки</p>
+                        <div class="accordion__item">
+                            <div class="parameter_block accordion__header">
+                                <button class="param-text">Наличие на складах</button>
                                 <img class="parameter_img" src="images/header/icons//str.png" alt="Cursor">
                             </div>
-                            <ul id="more_params" class="none">
-                                <li class="param">
-                                    <input type="checkbox" class="custom-checkbox" id="sig" name="sig" value="yes">
-                                    <label for="sig">Сигаретная</label>
-                                </li>
-                                <li class="param">
-                                    <input type="checkbox" class="custom-checkbox" id="reg" name="reg" value="yes">
-                                    <label for="reg">Регулируемая</label>
-                                </li>
-                                <li class="param">
-                                    <input type="checkbox" class="custom-checkbox" id="smesh" name="happy" value="yes">
-                                    <label for="smesh">Смешанная</label>
-                                </li>
-                                <li class="param">
-                                    <input type="checkbox" class="custom-checkbox" id="у" name="у" value="yes">
-                                    <label for="у">Кальянная</label>
-                                </li>
-                            </ul>
-                        </div>
-                        
-                        <div>
-                            <div class="parameter_block">
-                                <p class="param-text">Наличие на складах</p>
-                                <img class="parameter_img" src="images/header/icons//str.png" alt="Cursor">
+                            <div class="accordion__body">
+                                <ul class="more_params">
+                                    <li class="param">
+                                        <input type="checkbox" class="custom-checkbox" id="happy" name="happy" value="yes">
+                                        <label for="happy">Абакан, Кирова 77А</label>
+                                    </li>
+                                    <li class="param">
+                                        <input type="checkbox" class="custom-checkbox" id="happy" name="happy" value="yes">
+                                        <label for="happy">Абакан, Пушкина 120</label>
+                                    </li>
+                                    <li class="param">
+                                        <input type="checkbox" class="custom-checkbox" id="happy" name="happy" value="yes">
+                                        <label for="happy">Черногорск, Ленина 99Б</label>
+                                    </li>
+                                </ul>
                             </div>
-                            <ul class="more_params">
-                                <li class="param">
-                                    <input type="checkbox" class="custom-checkbox" id="happy" name="happy" value="yes">
-                                    <label for="happy">Абакан, Кирова 77А</label>
-                                </li>
-                                <li class="param">
-                                    <input type="checkbox" class="custom-checkbox" id="happy" name="happy" value="yes">
-                                    <label for="happy">Абакан, Пушкина 120</label>
-                                </li>
-                                <li class="param">
-                                    <input type="checkbox" class="custom-checkbox" id="happy" name="happy" value="yes">
-                                    <label for="happy">Черногорск, Ленина 99Б</label>
-                                </li>
-                            </ul>
                         </div>
                     </div>
                     <div class="clean_block">
                         <a class="clean_text" href="">Очистить фильтр</a>
                     </div>
+
                 </div>
 
                 <div class="container_cards">
@@ -189,16 +239,16 @@
                     <div class="cards_block">
                         <div class="card">
                             <div class="img_card">
-                                <a href=""><img class="img" src="images/main/cards/White-Raga-Aio.webp" alt=""></a>
+                                <a href="product.html"><img class="img" src="images/main/cards/White-Raga-Aio.webp" alt=""></a>
                             </div>
                             <div class="text-card">
-                                <a href="">Одноразовый GOODOK 4200 Blue Razz Lemonade</a>
+                                <a href="product.html">Одноразовый GOODOK 4200 Blue Razz Lemonade</a>
                             </div>
                             <p class="prise-card">1 500₽</p>
                             <a class="buttot_card" href="">
-                                <div class="cart_card">
+                                <button class="cart_card">
                                     <p>В корзину</p>
-                                </div>
+                                </button>
                             </a>
                         </div>
                         <div class="card">
@@ -210,9 +260,9 @@
                             </div>
                             <p class="prise-card">1 500₽</p>
                             <a class="buttot_card" href="">
-                                <div class="cart_card">
+                                <button class="cart_card">
                                     <p>В корзину</p>
-                                </div>
+                                </button>
                             </a>
                         </div>
                         <div class="card">
@@ -224,9 +274,9 @@
                             </div>
                             <p class="prise-card">1 500₽</p>
                             <a class="buttot_card" href="">
-                                <div class="cart_card">
+                                <button class="cart_card">
                                     <p>В корзину</p>
-                                </div>
+                                </button>
                             </a>
                         </div>
                         <div class="card">
@@ -238,9 +288,9 @@
                             </div>
                             <p class="prise-card">1 500₽</p>
                             <a class="buttot_card" href="">
-                                <div class="cart_card">
+                                <button class="cart_card">
                                     <p>В корзину</p>
-                                </div>
+                                </button>
                             </a>
                         </div>
                         <div class="card">
@@ -252,9 +302,9 @@
                             </div>
                             <p class="prise-card">1 500₽</p>
                             <a class="buttot_card" href="">
-                                <div class="cart_card">
+                                <button class="cart_card">
                                     <p>В корзину</p>
-                                </div>
+                                </button>
                             </a>
                         </div>
                         <div class="card">
@@ -266,9 +316,9 @@
                             </div>
                             <p class="prise-card">1 500₽</p>
                             <a class="buttot_card" href="">
-                                <div class="cart_card">
+                                <button class="cart_card">
                                     <p>В корзину</p>
-                                </div>
+                                </button>
                             </a>
                         </div>
                     </div>
@@ -325,6 +375,8 @@
     </div>
 
     <script src="scripts/category.js"></script>
+    <script src="scripts/min-max_price.js"></script>
+    <script src="scripts/burger.js"></script>
 
   </body>
 </html>
