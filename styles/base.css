@@ -306,6 +306,10 @@ footer {
     font-size: calc(10px + 16 * (100vw / 1500));
 }
 
+.number_footer a {
+    color: white;
+}
+
 .img_footer {
     width: 96px;
 }

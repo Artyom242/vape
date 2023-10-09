@@ -17,6 +17,10 @@
     display: flex;
 }
 
+.block_main a {
+    color: white;
+}
+
 .side_blocks {
     width: 300px;
     height: max-content;
