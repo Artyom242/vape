@@ -97,10 +97,15 @@
 }
 
 .product_btn {
-    min-width: 50%;
-    max-width: 70%;
+    width: 80%;
     border: 1px solid white;
+    transition: all .5s;
 }
+
+.product_btn:hover {
+    border: 1px solid rgb(66, 66, 66);
+}
+
 
 /* accardeon_product */
 
