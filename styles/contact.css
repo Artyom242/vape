@@ -18,7 +18,7 @@
 }
 
 .main_photo {
-    background: url(images/main/main_fon.png)  no-repeat;
+    background: url(/images/main/main_fon.png)  no-repeat;
     background-attachment: fixed;	
     background-position: 45% center;
     background-size: cover;
