@@ -1,0 +1,208 @@
+.block_title {
+    margin-top: 5%;
+    margin-bottom: 7%;
+    width: 100%;
+    border-bottom: 2px rgb(196, 196, 196) solid;
+  }
+  .title {
+    font-weight: bold;
+    font-size: calc(18px + 10 * (100vw / 1500));
+    margin-bottom: 15px;
+  }
+
+  /* main */
+.block_main {
+    font-size: calc(14px + 2 * (100vw / 1500));
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 10%;
+    gap: 180px;
+    line-height: normal;
+}
+
+
+.block_main button {
+    color: white;
+}
+
+/* block_1 */
+
+.blocks_one{
+    display: flex;
+    width: 100%;
+    height: 640px;
+    gap: 63px;
+    align-items: center;
+}
+
+.block_one-aboutText {
+    display: flex;
+    background: #080808;
+    width: 50%;
+    height: 100%;
+    align-items: center;
+    /* transition: all .5s; */
+}
+
+/* .block_one-aboutText:hover {
+    transform: rotateY(20deg) translateZ(0);
+    box-shadow: #BABABA 2px 1px;
+} */
+
+.blocks_one-title {
+    font-size: calc(24px + 8 * (100vw / 1500));
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+
+.blocks_one-text {
+    text-align: center;
+    line-height: normal;
+}
+
+.granica_text {
+    max-width: 80%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* раздел 1 / фото */
+.block_one-aboutImg {
+    height: 100%;
+    width: 50%;
+}
+
+
+/* Cards Why me? */
+
+.cards {
+    position: relative;
+    display: flex;
+    width: 100%;
+}
+
+.block_card {
+    position: absolute;
+    z-index: 10;
+    background: #000;
+    border-left: 1px solid #BABABA;
+    width: 685px;
+}
+
+.block_card-title {
+    border-bottom: 1px #BABABA solid;
+    padding: 40px 0;
+    margin: 0 40px;
+    font-size: calc(24px + 0 * (100vw / 1500));
+    font-weight: 700;
+}
+
+.block_card__items {
+    margin: 40px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+
+.block_card__item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: 45%;
+    line-height: normal;
+    transition: all .5s;
+    padding-bottom: 10px;
+    padding-right: 10px;
+}
+
+.card_item-img {
+    min-width: 40px;
+}
+
+.block_card__item:hover {
+    transform: rotateY(20deg) translateZ(0);
+    box-shadow: #BABABA 2px 1px;
+}
+
+.block_card_photo {
+    margin-top: 108px;
+    position: relative;
+    width: 87%;
+    min-height: 550px;
+}
+
+.photo_left {
+    margin-left: auto;
+}
+
+/* section brands */
+
+.block_card_right {
+    border-left: 0px solid #BABABA;
+    border-right: 1px solid #BABABA;
+    right: 0;
+}
+
+.brands_card {
+    gap: 15px;
+    align-items: center;
+}
+
+.brands_img {
+    transition: all .5s;
+}
+
+.brands_img:hover {
+    transform: rotateY(20deg) translateZ(0);
+    box-shadow: #BABABA 2px 1px;
+}
+
+
+/* Медиа */
+@media (max-width: 1200px) {
+    .block_one-aboutText {
+        width: 100%;
+
+        /* transition: all .5s; */
+    }
+    .blocks_one{
+        height: 400px;
+        gap: 30px;
+    }
+
+    .block_card_photo {
+        margin-top: 90px;
+        width: 87%;
+        min-height: 100%;
+    }
+
+    .block_card {
+        border-left: 0px solid #BABABA;
+    }
+
+    .cards {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+}
+
+/* Нужно доделать адаптивную верстку */
+
+@media (max-width: 1070px) {
+    .block_one-aboutImg {
+        display: none;
+    }
+}
+
+
+
+@media (max-width: 700px) {
+
+}
